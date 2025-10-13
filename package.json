@@ -2,5 +2,13 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.5.10",
     "tailwindcss": "^4.0.3"
+  },
+  "devDependencies": {
+    "@inertiajs/react": "^2.2.8",
+    "@vitejs/plugin-react": "^5.0.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "vite": "^7.1.9",
+    "vite-plugin-ruby": "^5.1.1"
   }
 }
