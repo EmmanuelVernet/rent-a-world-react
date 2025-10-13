@@ -138,6 +138,8 @@ GEM
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
+    inertia_rails (3.11.0)
+      railties (>= 6)
     io-console (0.8.0)
     irb (1.15.2)
       pp (>= 0.6.0)
@@ -405,6 +407,7 @@ DEPENDENCIES
   htmlbeautifier
   image_processing (~> 1.2)
   importmap-rails
+  inertia_rails
   jbuilder
   kamal
   lexxy (~> 0.1.4.beta)
