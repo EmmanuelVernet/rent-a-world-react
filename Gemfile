@@ -22,6 +22,7 @@ gem "jbuilder"
 
 # Inertia Rails adapter gem. => [https://github.com/inertiajs/inertia-rails]
 gem 'inertia_rails'
+gem "vite_rails", "~> 3.0"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
@@ -121,4 +122,3 @@ group :test do
 end
 
 
-gem "vite_rails", "~> 3.0"
