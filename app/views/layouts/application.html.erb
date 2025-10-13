@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html data-theme="fantasy">
   <head>
-    <title><%= content_for(:title) || "Rent A World" %></title>
+    <title inertia><%= content_for(:title) || "Rent A World" %></title>
     <%# <meta name="viewport" content="width=device-width,initial-scale=1"> %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,6 +34,22 @@
     <%# Calendar %>
     <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
     <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+
+    <%= vite_stylesheet_tag "application" %>
+    <%= vite_react_refresh_tag %>
+    <%= vite_client_tag %>
+    <%= vite_javascript_tag "inertia" %>
+    <%= inertia_ssr_head %>
+    <%= vite_javascript_tag 'application' %>
+    <!--
+      If using a TypeScript entrypoint file:
+        vite_typescript_tag 'application'
+
+      If using a .jsx or .tsx entrypoint, add the extension:
+        vite_javascript_tag 'application.jsx'
+
+      Visit the guide for more information: https://vite-ruby.netlify.app/guide/rails
+    -->
 
   </head>
 
