@@ -20,6 +20,9 @@ gem "tailwindcss-rails", "~> 4.2" # which transitively pins tailwindcss-ruby to 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Inertia Rails adapter gem. => [https://github.com/inertiajs/inertia-rails]
+gem 'inertia_rails'
+
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
