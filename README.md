@@ -1,6 +1,6 @@
 # Rent a World
 
-"Rent a World" — an AirBnB-style booking app for fantasy universes. Built with Rails 8, Hotwire, Tailwind, and live chat — everything from authentication to real-time messaging and notifications.
+"Rent a World" — an AirBnB-style booking app for fantasy universes. Built with Rails 8, Inertia.js with Ract, Tailwind, and live chat — everything from authentication to real-time messaging and notifications.
 
 Why a fantasy world theme? Well, I wanted to theme the app with something more fun than flats. That's it!
 
