@@ -76,5 +76,5 @@ Rails.application.routes.draw do
   # resources :reviews, only: [ :index, :show, :destroy ]
 
   # Inertia Routes
-
+  get inertia :inertia_home
 end
