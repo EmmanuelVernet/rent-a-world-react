@@ -74,4 +74,7 @@ Rails.application.routes.draw do
 
   # Reviews routes (for global access or management)
   # resources :reviews, only: [ :index, :show, :destroy ]
+
+  # Inertia Routes
+
 end
