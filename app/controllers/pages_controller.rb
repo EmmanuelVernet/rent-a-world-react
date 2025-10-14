@@ -6,9 +6,10 @@ class PagesController < ApplicationController
 
   # Inertia
   def inertia_home
-    render inertia: "Pages/Home", props: {
+    render inertia: "InertiaHome", props: {
       worlds: World.includes(:user, :tags)
     }
-    raise
   end
 end
+
+# pages/InertiaHome.jsx
