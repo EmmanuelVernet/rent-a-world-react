@@ -14,7 +14,7 @@ class PagesController < ApplicationController
     worlds = World.includes(:user, :tags)
     # Rails.logger.info worlds.as_json
     render inertia: "InertiaHome", props: { worlds: worlds }
-    raise
+    # raise
   end
 end
 
