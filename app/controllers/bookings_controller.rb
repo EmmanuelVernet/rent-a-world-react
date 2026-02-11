@@ -83,7 +83,7 @@ class BookingsController < ApplicationController
       redirect_to booking_path(@booking), notice: "Only the guest can edit the booking request"
     end
   end
-  
+
   def update
     @booking.status = "pending" # edition re-sets booking as pending
     if @booking.update(booking_params)
@@ -94,7 +94,7 @@ class BookingsController < ApplicationController
       render :edit, status: :unprocessable_entity
     end
   end
-  
+
   def destroy
     if @booking.destroy
       redirect_to bookings_path, notice: "Booking destroyed!"
