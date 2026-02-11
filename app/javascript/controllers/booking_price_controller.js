@@ -19,9 +19,9 @@ export default class extends Controller {
     })
     // Target calendar-range element
     const calendar = this.element.querySelector("calendar-range");
-    
+
     if (!calendar) return;
-    
+
     // Cally disallow dates if unavailabilities range include calendar dates
     calendar.isDateDisallowed = (date) => {
       // convert to date object to String then split
@@ -29,7 +29,7 @@ export default class extends Controller {
       return this.unavailabilitiesValue.includes(str);
     };
   }
-    
+
   bookingDates(event) { // change event
     const [startDate, endDate] = event.currentTarget.value.split("/")
     this.startDateTarget.value = startDate
@@ -39,7 +39,7 @@ export default class extends Controller {
     const end = new Date(endDate)
     const bookingNights = (end - start) / (1000 * 60 * 60 * 24) // milliseconds timedelta conversion
     const bookingPrice = bookingNights * this.priceValue * this.capacityValue
-    this.bookingPriceTarget.innerText = `Booking price for a party of 
+    this.bookingPriceTarget.innerText = `Booking price for a party of
     ${this.capacityValue} for ${bookingNights} nights → ${bookingPrice} €`
   }
 }
